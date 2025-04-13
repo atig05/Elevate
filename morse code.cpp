@@ -15,7 +15,7 @@ bool f(string &s){
 	}
 	return st.empty();
 }
-int fuck(string input[] ,int n){
+int ff(string input[] ,int n){
 	int c=0;
 	for(int i=0;i<n;i++) c+=f(input[i]);
 	return c;
@@ -25,5 +25,5 @@ int main(void){
 	cin>>n;
 	string a[n];
 	for(int i=0;i<n;i++) cin>>a[i];
-	cout<<fuck(a,n);
+	cout<<ff(a,n);
 }
