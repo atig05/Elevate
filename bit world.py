@@ -1,4 +1,4 @@
-def fuck(n):
+def fun(n):
     our_odd=1
     our_even=2
     for i in range(n-1):
@@ -31,4 +31,4 @@ def fuck(n):
     return (t_e+t_o)-(our_odd+our_even)   
 
 n=int(input())
-print(fuck(n))
+print(fun(n))
