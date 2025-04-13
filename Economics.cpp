@@ -3,16 +3,16 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void fuck(vector<int> &a,int i,vector<int > &s,vector<vector<int > > &res){
+void func(vector<int> &a,int i,vector<int > &s,vector<vector<int > > &res){
 	if(i==a.size()){
 		if(s.size()!=0)
 			res.push_back(s);
 		return;
 	}
 	s.push_back(a[i]);
-	fuck(a,i+1,s,res);
+	func(a,i+1,s,res);
 	s.pop_back();
-	fuck(a,i+1,s,res);
+	func(a,i+1,s,res);
 }
 vector<int >  creampie(vector<vector<int > > &res){
 	vector<int> a;
@@ -48,7 +48,7 @@ int main(void){
 	for(int i=0;i<n;i++) a.push_back(i+1);
 	vector<int> s;
 	vector<vector<int > > res;
-	fuck(a,0,s,res);
+	func(a,0,s,res);
 	
 	s=creampie(res);
 	for(int i=0;i<s.size();i++)
