@@ -5,7 +5,7 @@ bool comp(pair<int,int> a,pair<int,int> b){
 	else if(a.first==b.first and a.second>b.second) return true;
 	return false;
 }
-void creampie(vector<int> &a,int n){
+void fun(vector<int> &a,int n){
 	int max=a[0];
 	for(int i=0;i<n;i++){
 		if(max>a[i]) max=a[i];
@@ -26,5 +26,5 @@ int main(void){
 	a.push_back(4);
 	a.push_back(2);
 	a.push_back(1);
-	creampie(a,n);
+	fun(a,n);
 }
