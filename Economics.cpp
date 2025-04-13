@@ -14,11 +14,11 @@ void func(vector<int> &a,int i,vector<int > &s,vector<vector<int > > &res){
 	s.pop_back();
 	func(a,i+1,s,res);
 }
-vector<int >  creampie(vector<vector<int > > &res){
+vector<int >  method(vector<vector<int > > &res){
 	vector<int> a;
 	double max=INT_MIN;
 	for(int i=0;i<res.size();i++){
-		//cout<<"creampie ";
+		//cout<<"method ";
 		double s=0;
 		for(int j=0;j<res[i].size();j++) {
 			s+=res[i][j];
@@ -50,7 +50,7 @@ int main(void){
 	vector<vector<int > > res;
 	func(a,0,s,res);
 	
-	s=creampie(res);
+	s=method(res);
 	for(int i=0;i<s.size();i++)
 		cout<<s[i]<<" ";
 	
